@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>100 Marketing Prompts — The Ready-to-Use AI Marketing System</title>
+  <meta name="description" content="Stop staring at a blank page. Get 100 battle-tested, high-converting marketing prompts for content, emails, ads, and sales copy." />
+
+  <!-- Google Fonts: Inter & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          },
+          colors: {
+            base: '#09090b',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Conexão com o arquivo CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
+
+  <!-- Ambient Background Grid & Soft Indigo/Violet Glows -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute inset-0 bg-grid"></div>
+    <div class="absolute -top-48 left-1/2 -translate-x-1/2 w-[920px] h-[460px] rounded-full bg-indigo-600/15 dark:bg-indigo-500/15 blur-[135px]"></div>
+    <div class="absolute top-1/3 -right-32 w-[480px] h-[480px] rounded-full bg-violet-600/10 dark:bg-violet-500/10 blur-[140px]"></div>
+  </div>
+
+  <!-- 1. FIXED NAVBAR WITH BLUR -->
+  <header class="fixed top-0 inset-x-0 z-50 border-b border-black/[0.06] dark:border-white/[0.08] bg-white/75 dark:bg-[#09090b]/75 backdrop-blur-xl transition-colors">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform">
+          <i data-lucide="terminal" class="w-4 h-4"></i>
+        </div>
+        <span class="font-display font-bold tracking-tight text-base text-zinc-900 dark:text-white">100 Prompts</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+        <a href="#benefits" class="hover:text-zinc-950 dark:hover:text-white transition-colors">Benefits</a>
+        <a href="#whats-inside" class="hover:text-zinc-950 dark:hover:text-white transition-colors">What’s Inside</a>
+        <a href="#faq" class="hover:text-zinc-950 dark:hover:text-white transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Right Actions: Theme Toggle + Main CTA -->
+      <div class="flex items-center gap-3">
+        <button id="theme-toggle" aria-label="Toggle theme" class="w-9 h-9 rounded-lg border border-black/10 dark:border-white/10 flex items-center justify-center text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+          <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
+          <i data-lucide="moon" class="w-4 h-4 block dark:hidden"></i>
+        </button>
+
+        <a href="https://dvdfeud.gumroad.com/l/100promptsmk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-medium bg-zinc-900 text-white dark:bg-white dark:text-zinc-950 hover:opacity-90 transition-all shadow-sm">
+          <span>Get Instant Access</span>
+          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="relative z-10">
+
+    <!-- 2. HERO SECTION -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        
+        <!-- Left Column: Copy & CTAs -->
+        <div class="lg:col-span-7 space-y-8 text-left">
+          
+          <!-- Small Badge -->
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-indigo-500/25 bg-indigo-500/10 text-indigo-600 dark:text-indigo-300">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+            </span>
+            <span class="text-xs font-medium tracking-wide">Ready-to-use marketing system</span>
+          </div>
+
+          <!-- Big Powerful Headline -->
+          <h1 class="font-display font-bold text-4xl sm:text-6xl xl:text-[4.15rem] tracking-[-0.03em] leading-[1.06] text-zinc-950 dark:text-white">
+            Turn AI into your unfair <span class="text-gradient">marketing advantage.</span>
+          </h1>
+
+          <!-- Clear Subheadline -->
+          <p class="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed">
+            Stop wasting hours wrestling with generic AI outputs. Get <strong class="text-zinc-900 dark:text-zinc-200 font-medium">100 battle-tested marketing prompts</strong> engineered to write high-converting copy, viral content, email sequences, and profitable ad angles in seconds.
+          </p>
+
+          <!-- Two Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="https://dvdfeud.gumroad.com/l/100promptsmk" target="_blank" rel="noopener noreferrer" class="btn-glow inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl font-display font-semibold text-sm sm:text-base bg-gradient-to-r from-indigo-600 to-violet-600 text-white">
+              <span>Get the 100 Prompts →</span>
+            </a>
+            <a href="#whats-inside" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-display font-medium text-sm sm:text-base border border-black/10 dark:border-white/10 bg-black/[0.02] dark:bg-white/[0.03] text-zinc-800 dark:text-zinc-200 hover:bg-black/[0.05] dark:hover:bg-white/[0.06] transition-all">
+              <span>See what’s inside</span>
+              <i data-lucide="chevron-down" class="w-4 h-4 text-zinc-400"></i>
+            </a>
+          </div>
+
+          <!-- Trust Micro-Points -->
+          <div class="pt-2 flex flex-wrap items-center gap-6 text-xs text-zinc-500 dark:text-zinc-400">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+              <span>Works with ChatGPT, Claude &amp; Gemini</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="zap" class="w-4 h-4 text-indigo-400"></i>
+              <span>Instant Lifetime Access</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Glowing Prompt Engine Mockup -->
+        <div class="lg:col-span-5 relative">
+          <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-indigo-500/20 via-violet-500/15 to-transparent blur-2xl pointer-events-none"></div>
+
+          <div class="spotlight-card rounded-2xl border border-black/10 dark:border-white/15 bg-white/90 dark:bg-[#111115]/90 shadow-2xl overflow-hidden animate-float">
+            <!-- Window Header -->
+            <div class="px-4 py-3 border-b border-black/5 dark:border-white/10 flex items-center justify-between bg-black/[0.02] dark:bg-white/[0.02]">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500/70"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500/70"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/70"></span>
+              </div>
+              <span class="font-mono text-[11px] text-zinc-400">prompt-library // #042_sales_hook</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-indigo-500/15 text-indigo-500 dark:text-indigo-300 border border-indigo-500/20">READY</span>
+            </div>
+
+            <!-- Prompt Card Body -->
+            <div class="p-6 space-y-5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono uppercase tracking-wider text-indigo-500 dark:text-indigo-400">Category: Conversion Copy</span>
+                <span class="text-xs text-zinc-400">Prompt #42 of 100</span>
+              </div>
+
+              <!-- Prompt Box -->
+              <div class="p-4 rounded-xl bg-zinc-100/80 dark:bg-black/50 border border-black/5 dark:border-white/10 font-mono text-xs leading-relaxed text-zinc-700 dark:text-zinc-300 space-y-2">
+                <p class="text-zinc-400 dark:text-zinc-500">// ROLE &amp; CONSTRAINTS</p>
+                <p>
+                  Act as a direct-response copywriter. Analyze <span class="px-1.5 py-0.5 rounded bg-indigo-500/20 text-indigo-600 dark:text-indigo-300">[PRODUCT/OFFER]</span> for <span class="px-1.5 py-0.5 rounded bg-violet-500/20 text-violet-600 dark:text-violet-300">[TARGET AUDIENCE]</span>.
+                </p>
+                <p>
+                  Generate 5 contrarian hooks using the "Problem-Agitate-Invalidate" framework that eliminate the #1 buying objection: <span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-600 dark:text-emerald-300">[MAIN OBJECTION]</span>.
+                </p>
+              </div>
+
+              <!-- Simulated Output Preview -->
+              <div class="space-y-2.5 pt-1">
+                <div class="flex items-center justify-between text-xs">
+                  <span class="font-medium text-zinc-900 dark:text-zinc-200 flex items-center gap-1.5">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5 text-violet-400"></i>
+                    Structured Output Generated
+                  </span>
+                  <span class="font-mono text-[11px] text-emerald-500">1.2s</span>
+                </div>
+                <div class="p-3.5 rounded-lg bg-indigo-500/[0.06] border border-indigo-500/15 text-xs text-zinc-600 dark:text-zinc-300">
+                  "Why 92% of marketers get generic AI copy (and the 3-variable framework top agencies use to write campaigns in 4 minutes)..."
+                </div>
+              </div>
+
+              <!-- Bottom Bar inside Mockup -->
+              <div class="pt-3 border-t border-black/5 dark:border-white/10 flex items-center justify-between text-xs text-zinc-500">
+                <span>Plug &amp; Play Variables</span>
+                <a href="https://dvdfeud.gumroad.com/l/100promptsmk" target="_blank" rel="noopener noreferrer" class="text-indigo-500 dark:text-indigo-400 font-medium hover:underline flex items-center gap-1">
+                  <span>Unlock all 100</span>
+                  <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. SOCIAL PROOF / NUMBERS BAR -->
+    <section class="border-y border-black/[0.06] dark:border-white/[0.08] bg-black/[0.015] dark:bg-white/[0.015] backdrop-blur-sm">
+      <div class="max-w-7xl mx-auto px-6 py-10">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center lg:text-left">
+          
+          <div class="flex flex-col lg:flex-row items-center gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-500 dark:text-indigo-400 shrink-0">
+              <i data-lucide="users" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="font-display text-2xl font-bold text-zinc-900 dark:text-white">2,400+</div>
+              <div class="text-xs text-zinc-500 dark:text-zinc-400">Marketers &amp; Founders</div>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-center gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-500 dark:text-amber-400 shrink-0">
+              <i data-lucide="star" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="font-display text-2xl font-bold text-zinc-900 dark:text-white">4.9 / 5</div>
+              <div class="text-xs text-zinc-500 dark:text-zinc-400">Average Customer Rating</div>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-center gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-500 dark:text-violet-400 shrink-0">
+              <i data-lucide="layers" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="font-display text-2xl font-bold text-zinc-900 dark:text-white">100 Prompts</div>
+              <div class="text-xs text-zinc-500 dark:text-zinc-400">Across 6 Core Channels</div>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-center gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500 dark:text-emerald-400 shrink-0">
+              <i data-lucide="clock" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="font-display text-2xl font-bold text-zinc-900 dark:text-white">12+ Hours</div>
+              <div class="text-xs text-zinc-500 dark:text-zinc-400">Saved Every Single Week</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+        <!-- 4. PROBLEM SECTION (SHORT & PUNCHY) -->
+    <section class="py-24 sm:py-32 px-6">
+      <div class="max-w-4xl mx-auto text-center space-y-6 reveal">
+        <span class="text-xs font-mono uppercase tracking-[0.16em] text-rose-500 dark:text-rose-400">The Bottleneck</span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-white">
+          AI isn’t the problem.<br />
+          <span class="text-zinc-400 dark:text-zinc-500">Vague, one-line prompts are.</span>
+        </h2>
+        <p class="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+          Typing <span class="font-mono text-xs px-2 py-1 rounded bg-black/5 dark:bg-white/10 text-zinc-800 dark:text-zinc-300">"Write a marketing email for my product"</span> gives you robotic, cliché copy that nobody clicks. Coming up with fresh angles, hooks, and campaigns every day is exhausting—unless you have a proven system.
+        </p>
+
+        <!-- Comparison Pill Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-8 text-left">
+          <div class="p-6 rounded-2xl border border-rose-500/20 bg-rose-500/[0.03] space-y-3">
+            <div class="flex items-center gap-2 text-rose-500 font-medium text-sm">
+              <i data-lucide="x-circle" class="w-4 h-4"></i>
+              <span>Without a Prompt System</span>
+            </div>
+            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
+              <li>• Staring at a blinking cursor wondering what to post</li>
+              <li>• Generic, repetitive AI outputs that sound fake</li>
+              <li>• Spending 45 minutes rewriting a single email or ad</li>
+            </ul>
+          </div>
+
+          <div class="p-6 rounded-2xl border border-emerald-500/25 bg-emerald-500/[0.04] space-y-3">
+            <div class="flex items-center gap-2 text-emerald-500 font-medium text-sm">
+              <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+              <span>With 100 Marketing Prompts</span>
+            </div>
+            <ul class="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+              <li>• Endless stream of high-converting hooks &amp; angles</li>
+              <li>• Built-in copywriting psychology (PAS, AIDA, Story)</li>
+              <li>• Ready-to-launch assets generated in under 60 seconds</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. BENEFITS / FEATURES SECTION (6 CARDS) -->
+    <section id="benefits" class="py-24 sm:py-32 border-t border-black/[0.06] dark:border-white/[0.08] px-6">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="max-w-2xl space-y-4 reveal">
+          <span class="text-xs font-mono uppercase tracking-[0.16em] text-indigo-500 dark:text-indigo-400">Why It Works</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-white">
+            Engineered for speed and conversion.
+          </h2>
+          <p class="text-zinc-600 dark:text-zinc-400 text-base sm:text-lg">
+            Every prompt in this system is structured with role context, psychological frameworks, tone constraints, and plug-and-play variables.
+          </p>
+        </div>
+
+        <!-- 6 Cards Grid -->
+        <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Benefit 1 -->
+          <div class="spotlight-card rounded-2xl p-7 space-y-4 reveal">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-500 dark:text-indigo-400 relative z-10">
+              <i data-lucide="zap" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white relative z-10">Eliminate Blank-Page Syndrome</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed relative z-10">
+              Never wonder what to write again. Instantly generate 30 days of content ideas, ad hooks, and newsletter angles on demand.
+            </p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="spotlight-card rounded-2xl p-7 space-y-4 reveal">
+            <div class="w-10 h-10 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-500 dark:text-violet-400 relative z-10">
+              <i data-lucide="target" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white relative z-10">Proven Copywriting Frameworks</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed relative z-10">
+              Prompts are pre-loaded with direct-response principles so your outputs persuade readers and drive actual clicks and sales.
+            </p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="spotlight-card rounded-2xl p-7 space-y-4 reveal">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-500 dark:text-sky-400 relative z-10">
+              <i data-lucide="sliders" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white relative z-10">Plug-and-Play Variables</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed relative z-10">
+              Simply fill in the <span class="font-mono text-xs text-indigo-400">[BRACKETS]</span> with your product and audience. Zero prompt-engineering skills required.
+            </p>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="spotlight-card rounded-2xl p-7 space-y-4 reveal">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500 dark:text-emerald-400 relative z-10">
+              <i data-lucide="cpu" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white relative z-10">Model-Agnostic Architecture</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed relative z-10">
+              Optimized to produce human-sounding, high-impact results on ChatGPT (GPT-4o), Claude 3.5 Sonnet, and Google Gemini.
+            </p>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div class="spotlight-card rounded-2xl p-7 space-y-4 reveal">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-500 dark:text-amber-400 relative z-10">
+              <i data-lucide="globe" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white relative z-10">Full-Funnel Coverage</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed relative z-10">
+              From top-of-funnel viral social posts to bottom-of-funnel objection-crushing sales pages and retargeting ads.
+            </p>
+          </div>
+
+          <!-- Benefit 6 -->
+          <div class="spotlight-card rounded-2xl p-7 space-y-4 reveal">
+            <div class="w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-500 dark:text-pink-400 relative z-10">
+              <i data-lucide="repeat" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white relative z-10">Infinite Reusability</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed relative z-10">
+              Use the exact same 100 frameworks across multiple brands, client projects, product launches, and niches forever.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. WHAT’S INSIDE SECTION (CATEGORIES BREAKDOWN) -->
+    <section id="whats-inside" class="py-24 sm:py-32 border-t border-black/[0.06] dark:border-white/[0.08] px-6">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 reveal">
+          <div class="max-w-2xl space-y-4">
+            <span class="text-xs font-mono uppercase tracking-[0.16em] text-indigo-500 dark:text-indigo-400">Complete Breakdown</span>
+            <h2 class="font-display text-3xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-white">
+              What’s inside the 100 Prompts.
+            </h2>
+          </div>
+          <a href="https://dvdfeud.gumroad.com/l/100promptsmk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-medium text-indigo-500 dark:text-indigo-400 hover:underline">
+            <span>Download the full vault now</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- 6 Category Cards -->
+        <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Category 1 -->
+          <div class="spotlight-card rounded-2xl p-7 flex flex-col justify-between reveal">
+            <div class="space-y-4 relative z-10">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-500/10 text-indigo-500 dark:text-indigo-300 border border-indigo-500/20">20 PROMPTS</span>
+                <i data-lucide="flame" class="w-5 h-5 text-zinc-400"></i>
+              </div>
+              <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white">01. Viral Content &amp; Hooks</h3>
+              <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                Scroll-stopping hooks, contrarian takes, content pillars, and topic clusters that capture attention immediately.
+              </p>
+            </div>
+            <div class="pt-5 mt-6 border-t border-black/5 dark:border-white/10 text-xs font-mono text-zinc-500 relative z-10">
+              Includes: Hook matrices, YouTube/Reels scripts, blog engines
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="spotlight-card rounded-2xl p-7 flex flex-col justify-between reveal">
+            <div class="space-y-4 relative z-10">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-violet-500/10 text-violet-500 dark:text-violet-300 border border-violet-500/20">18 PROMPTS</span>
+                <i data-lucide="mail" class="w-5 h-5 text-zinc-400"></i>
+              </div>
+              <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white">02. Email Marketing</h3>
+              <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                Welcome sequences, cold outreach, cart-abandonment flows, and high-open-rate subject line generators.
+              </p>
+            </div>
+            <div class="pt-5 mt-6 border-t border-black/5 dark:border-white/10 text-xs font-mono text-zinc-500 relative z-10">
+              Includes: 5-day launch sequence, re-engagement flows
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="spotlight-card rounded-2xl p-7 flex flex-col justify-between reveal">
+            <div class="space-y-4 relative z-10">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-500/10 text-sky-500 dark:text-sky-300 border border-sky-500/20">16 PROMPTS</span>
+                <i data-lucide="share-2" class="w-5 h-5 text-zinc-400"></i>
+              </div>
+              <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white">03. Social Media Growth</h3>
+              <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                X/Twitter threads, LinkedIn authority posts, Instagram carousels, and content repurposing workflows.
+              </p>
+            </div>
+            <div class="pt-5 mt-6 border-t border-black/5 dark:border-white/10 text-xs font-mono text-zinc-500 relative z-10">
+              Includes: 1-to-10 content multiplier, authority storytelling
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="spotlight-card rounded-2xl p-7 flex flex-col justify-between reveal">
+            <div class="space-y-4 relative z-10">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-emerald-500/10 text-emerald-500 dark:text-emerald-300 border border-emerald-500/20">18 PROMPTS</span>
+                <i data-lucide="file-text" class="w-5 h-5 text-zinc-400"></i>
+              </div>
+              <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white">04. Sales Copy &amp; Landing Pages</h3>
+              <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                Hero headlines, value propositions, bullet-point benefits, guarantee framings, and objection busters.
+              </p>
+            </div>
+            <div class="pt-5 mt-6 border-t border-black/5 dark:border-white/10 text-xs font-mono text-zinc-500 relative z-10">
+              Includes: Full landing page builder, VSL script outline
+            </div>
+          </div>
+
+          <!-- Category 5 -->
+          <div class="spotlight-card rounded-2xl p-7 flex flex-col justify-between reveal">
+            <div class="space-y-4 relative z-10">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-500/10 text-amber-500 dark:text-amber-300 border border-amber-500/20">15 PROMPTS</span>
+                <i data-lucide="megaphone" class="w-5 h-5 text-zinc-400"></i>
+              </div>
+              <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white">05. Paid Ads &amp; Creative Angles</h3>
+              <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                Meta, TikTok, and Google ad variations, UGC video scripts, and psychological angle testing matrices.
+              </p>
+            </div>
+            <div class="pt-5 mt-6 border-t border-black/5 dark:border-white/10 text-xs font-mono text-zinc-500 relative z-10">
+              Includes: UGC hook-body-CTA generator, ad variations
+            </div>
+          </div>
+
+          <!-- Category 6 -->
+          <div class="spotlight-card rounded-2xl p-7 flex flex-col justify-between reveal">
+            <div class="space-y-4 relative z-10">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-pink-500/10 text-pink-500 dark:text-pink-300 border border-pink-500/20">13 PROMPTS</span>
+                <i data-lucide="compass" class="w-5 h-5 text-zinc-400"></i>
+              </div>
+              <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white">06. Offer &amp; Funnel Strategy</h3>
+              <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                Audience persona deep-dives, competitor gap analysis, irresistible lead magnets, and pricing psychology.
+              </p>
+            </div>
+            <div class="pt-5 mt-6 border-t border-black/5 dark:border-white/10 text-xs font-mono text-zinc-500 relative z-10">
+              Includes: Grand Slam Offer architect, ICP extractor
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+        <!-- 7. HOW IT WORKS (3 SIMPLE STEPS) -->
+    <section class="py-24 sm:py-32 border-t border-black/[0.06] dark:border-white/[0.08] px-6">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-4 reveal">
+          <span class="text-xs font-mono uppercase tracking-[0.16em] text-indigo-500 dark:text-indigo-400">Zero Friction</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-white">
+            From idea to published in 3 steps.
+          </h2>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Step 1 -->
+          <div class="p-8 rounded-2xl border border-black/10 dark:border-white/10 bg-black/[0.015] dark:bg-white/[0.015] space-y-4 reveal">
+            <div class="font-display text-3xl font-bold text-indigo-500 dark:text-indigo-400">01</div>
+            <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white">Choose Your Objective</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Browse the organized library by channel—whether you need a high-converting sales page, a 5-part email sequence, or 10 viral ad hooks.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="p-8 rounded-2xl border border-black/10 dark:border-white/10 bg-black/[0.015] dark:bg-white/[0.015] space-y-4 reveal">
+            <div class="font-display text-3xl font-bold text-violet-500 dark:text-violet-400">02</div>
+            <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white">Insert Your Variables</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Copy the prompt into ChatGPT or Claude and replace the highlighted placeholders with your product, audience, and tone of voice.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="p-8 rounded-2xl border border-black/10 dark:border-white/10 bg-black/[0.015] dark:bg-white/[0.015] space-y-4 reveal">
+            <div class="font-display text-3xl font-bold text-emerald-500 dark:text-emerald-400">03</div>
+            <h3 class="font-display text-xl font-semibold text-zinc-900 dark:text-white">Deploy &amp; Scale</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Get agency-grade marketing assets in seconds. Ship faster, test more angles, and focus on growing your revenue.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. STRONG FINAL CTA SECTION -->
+    <section class="py-24 sm:py-32 border-t border-black/[0.06] dark:border-white/[0.08] px-6 relative overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+        <div class="w-[650px] h-[360px] rounded-full bg-gradient-to-r from-indigo-500/20 via-violet-500/20 to-purple-500/20 blur-[130px]"></div>
+      </div>
+
+      <div class="max-w-3xl mx-auto relative z-10">
+        <div class="spotlight-card rounded-3xl p-8 sm:p-14 border border-indigo-500/30 text-center space-y-8 shadow-2xl reveal">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/25 text-indigo-500 dark:text-indigo-300 text-xs font-mono uppercase tracking-widest">
+            <span>Instant Digital Access</span>
+          </div>
+
+          <h2 class="font-display text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-zinc-950 dark:text-white">
+            Your entire marketing team in <span class="text-gradient">100 prompts.</span>
+          </h2>
+
+          <p class="text-zinc-600 dark:text-zinc-400 text-base sm:text-lg max-w-xl mx-auto">
+            Save 12+ hours every week and never run out of profitable marketing campaigns, emails, or content ideas again.
+          </p>
+
+          <!-- Value / Price Reminder Box -->
+          <div class="max-w-md mx-auto p-5 rounded-2xl bg-black/[0.03] dark:bg-white/[0.03] border border-black/10 dark:border-white/10 space-y-3 text-left text-sm">
+            <div class="flex items-center justify-between pb-3 border-b border-black/5 dark:border-white/10">
+              <span class="font-medium text-zinc-900 dark:text-white">100 Marketing Prompts System</span>
+              <span class="font-mono text-xs px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-500 font-semibold">ONE-TIME PAYMENT</span>
+            </div>
+            <ul class="space-y-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> All 100 copy-and-paste marketing prompts</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> Organized across 6 core growth channels</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> Built-in variable placeholders &amp; instructions</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> Lifetime access &amp; future prompt updates</li>
+            </ul>
+          </div>
+
+          <!-- Main Gumroad CTA Button -->
+          <div class="pt-2">
+            <a href="https://dvdfeud.gumroad.com/l/100promptsmk" target="_blank" rel="noopener noreferrer" class="btn-glow w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-4 rounded-xl font-display font-semibold text-base sm:text-lg bg-gradient-to-r from-indigo-600 to-violet-600 text-white">
+              <span>Get the 100 Prompts Now</span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+            <p class="mt-3 text-xs text-zinc-500">
+              Secure checkout via Gumroad • Instant access after purchase
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. SIMPLE FAQ SECTION (5 QUESTIONS) -->
+    <section id="faq" class="py-24 sm:py-32 border-t border-black/[0.06] dark:border-white/[0.08] px-6">
+      <div class="max-w-3xl mx-auto">
+        
+        <div class="text-center space-y-4 mb-14 reveal">
+          <span class="text-xs font-mono uppercase tracking-[0.16em] text-indigo-500 dark:text-indigo-400">FAQ</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-zinc-950 dark:text-white">
+            Frequently asked questions.
+          </h2>
+        </div>
+
+        <div class="space-y-4 reveal">
+          
+          <!-- Question 1 -->
+          <div class="faq-item rounded-2xl border border-black/10 dark:border-white/10 bg-black/[0.015] dark:bg-white/[0.02] overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-medium text-base text-zinc-900 dark:text-white">
+              <span>Which AI tools do these prompts work with?</span>
+              <i data-lucide="plus" class="faq-icon w-4 h-4 text-zinc-400 transition-transform duration-200 shrink-0"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Every prompt works seamlessly with ChatGPT (both free and Plus/GPT-4o), Claude, Google Gemini, and any other modern large language model.
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item rounded-2xl border border-black/10 dark:border-white/10 bg-black/[0.015] dark:bg-white/[0.02] overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-medium text-base text-zinc-900 dark:text-white">
+              <span>Are these just basic one-sentence prompts?</span>
+              <i data-lucide="plus" class="faq-icon w-4 h-4 text-zinc-400 transition-transform duration-200 shrink-0"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Not at all. Each prompt is a structured framework that assigns the AI a specific marketing role, defines target audience psychology, applies proven copywriting formulas (like PAS or AIDA), and uses customizable variables so your output is tailored and persuasive.
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item rounded-2xl border border-black/10 dark:border-white/10 bg-black/[0.015] dark:bg-white/[0.02] overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-medium text-base text-zinc-900 dark:text-white">
+              <span>How do I receive the prompts after purchasing?</span>
+              <i data-lucide="plus" class="faq-icon w-4 h-4 text-zinc-400 transition-transform duration-200 shrink-0"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Immediately after checkout on Gumroad, you get instant access to the complete digital library so you can start copying and using the prompts within 60 seconds.
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item rounded-2xl border border-black/10 dark:border-white/10 bg-black/[0.015] dark:bg-white/[0.02] overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-medium text-base text-zinc-900 dark:text-white">
+              <span>Will this work for my specific niche or industry?</span>
+              <i data-lucide="plus" class="faq-icon w-4 h-4 text-zinc-400 transition-transform duration-200 shrink-0"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Yes. Whether you sell SaaS, digital products, e-commerce, coaching, or agency services, the bracketed variables adapt the underlying marketing psychology to your exact offer and customer profile.
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="faq-item rounded-2xl border border-black/10 dark:border-white/10 bg-black/[0.015] dark:bg-white/[0.02] overflow-hidden">
+            <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-display font-medium text-base text-zinc-900 dark:text-white">
+              <span>Can I use these prompts for client work?</span>
+              <i data-lucide="plus" class="faq-icon w-4 h-4 text-zinc-400 transition-transform duration-200 shrink-0"></i>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Absolutely. Freelancers and agencies use this exact system to speed up client deliverables, ad creative testing, and email retainers.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 10. MINIMALIST FOOTER -->
+  <footer class="border-t border-black/[0.06] dark:border-white/[0.08] py-12 px-6 text-xs text-zinc-500 relative z-10">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-2.5">
+        <div class="w-6 h-6 rounded-md bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-white">
+          <i data-lucide="terminal" class="w-3.5 h-3.5"></i>
+        </div>
+        <span class="font-display font-bold text-zinc-900 dark:text-white">100 Prompts</span>
+        <span class="text-zinc-400 dark:text-zinc-600">© 2025 All rights reserved.</span>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#benefits" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Benefits</a>
+        <a href="#whats-inside" class="hover:text-zinc-900 dark:hover:text-white transition-colors">What’s Inside</a>
+        <a href="#faq" class="hover:text-zinc-900 dark:hover:text-white transition-colors">FAQ</a>
+        <a href="https://dvdfeud.gumroad.com/l/100promptsmk" target="_blank" rel="noopener noreferrer" class="text-indigo-500 dark:text-indigo-400 font-medium hover:underline">Get Instant Access →</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Conexão com o arquivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

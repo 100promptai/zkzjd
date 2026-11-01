@@ -1,0 +1,123 @@
+:root {
+  --bg-primary: #fafafa;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-elevated: #ffffff;
+  --border-subtle: rgba(9, 9, 11, 0.08);
+  --border-hover: rgba(99, 102, 241, 0.35);
+  --text-primary: #09090b;
+  --text-secondary: #52525b;
+  --grid-line: rgba(9, 9, 11, 0.04);
+  --spotlight: rgba(99, 102, 241, 0.08);
+}
+
+html.dark {
+  --bg-primary: #09090b;
+  --bg-card: rgba(24, 24, 27, 0.45);
+  --bg-elevated: #121215;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(139, 92, 246, 0.45);
+  --text-primary: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --grid-line: rgba(255, 255, 255, 0.03);
+  --spotlight: rgba(139, 92, 246, 0.12);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+/* Subtle Linear/Vercel Grid Background */
+.bg-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  mask-image: radial-gradient(ellipse 85% 65% at 50% 25%, #000 55%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 65% at 50% 25%, #000 55%, transparent 100%);
+}
+
+/* Spotlight Hover Cards */
+.spotlight-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(12px);
+  transition: border-color 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    480px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    var(--spotlight),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+
+.spotlight-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #c7d2fe 45%, #818cf8 75%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html:not(.dark) .text-gradient {
+  background: linear-gradient(135deg, #09090b 0%, #3730a3 50%, #6366f1 85%, #9333ea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glowing Primary CTA Button */
+.btn-glow {
+  position: relative;
+  box-shadow: 0 0 35px -8px rgba(99, 102, 241, 0.55);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 50px -5px rgba(139, 92, 246, 0.75);
+  transform: translateY(-1px) scale(1.01);
+}
+
+/* Scroll Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Floating subtle animation */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: floatSlow 7s ease-in-out infinite;
+}
+
